@@ -27,3 +27,11 @@ model.compile(optimizer = tf.train.AdamOptimizer(),
 model.fit(training_image, training_labels, epochs=5)   
 model.evaluate(test_image, test_labels)
 ```
++ 使用callback适时停止训练
+```
+class myCallback(tf.keras.callbacks.Callback):
+  def on_epoch_end(self, epoch, logs={}):
+      if(logs.get('loss')<0.4):
+        print ("\nLoss is low so canceling training!")
+        self.model.stop_training = True
+```
