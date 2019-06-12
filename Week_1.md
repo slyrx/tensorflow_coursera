@@ -16,4 +16,4 @@ print(model.predict([7.0]))
 + Sequential是顺序模型，用于组合神经网络的层结构容器。
 
 #### keras.layers.Dense
-+ 全连接层相当于线性回归的那个公式。
++ 全连接层相当于线性回归的公式。
