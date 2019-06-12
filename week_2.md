@@ -20,3 +20,8 @@ model = keras.Sequential([
   keras.layers.Dense(10,activation=tf.nn.softmax) # 这里的10表示输出只有10种种类
 ])
 ```
++ 代码整体走一遍
+model.compile(optimizer = tf.train.AdamOptimizer(),
+              loss = 'sparse_categorical_crossentropy')
+model.fit(training_image, training_labels, epochs=5)      
+model.evaluate(test_image, test_labels)
