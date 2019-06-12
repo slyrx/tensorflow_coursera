@@ -70,3 +70,10 @@ model.compile(optimizer='adam',
 
 model.fit(x_train, y_train, epochs=10, callbacks=[callbacks])
 ```
+
+## 训练结果有差异的原因
++ 数据集不同，较好的结果是用的fashion_mnist,较差的结果是用的minist
++ 训练和预测图片对255.0做了除法，不知何用
++ 构建模型，好的结果在Flatten的位置没有使用参数，而差的结果设置了(28,28)
++ 好的结果隐藏层使用了128个神经元，差的结果使用了512个神经元
++ 编译使用了tf.train.AdamOptimizer()做优化器，而差的结果使用了直接指定‘adam’
