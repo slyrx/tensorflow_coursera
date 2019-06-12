@@ -18,6 +18,12 @@ print(model.predict([7.0]))
 #### keras.layers.Dense
 + 全连接层相当于线性回归的公式。
 
+#### 包括的主要部分
++ 构造模型 Sequential
++ 编译模型 compile
++ 训练模型 fit
++ 预测模型 predict
+
 ## 本周介绍内容
 + 基本介绍
 + 可以获得的支持
