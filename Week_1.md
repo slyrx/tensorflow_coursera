@@ -17,3 +17,12 @@ print(model.predict([7.0]))
 
 #### keras.layers.Dense
 + 全连接层相当于线性回归的公式。
+
+## 本周介绍内容
++ 基本介绍
++ 可以获得的支持
++ "hello world"
++ 用python来实现Tensorflow的“hello world!”
++ 试一试
++ 文字测验
++ 代码实践
