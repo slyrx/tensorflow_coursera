@@ -21,7 +21,9 @@ model = keras.Sequential([
 ])
 ```
 + 代码整体走一遍
-model.compile(optimizer = tf.train.AdamOptimizer(),<br>
-              loss = 'sparse_categorical_crossentropy')<br>
-model.fit(training_image, training_labels, epochs=5) <br>  
-model.evaluate(test_image, test_labels)<br>
+```
+model.compile(optimizer = tf.train.AdamOptimizer(),
+              loss = 'sparse_categorical_crossentropy')
+model.fit(training_image, training_labels, epochs=5)   
+model.evaluate(test_image, test_labels)
+```
