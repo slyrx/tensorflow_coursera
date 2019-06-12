@@ -35,3 +35,9 @@ class myCallback(tf.keras.callbacks.Callback):
         print ("\nLoss is low so canceling training!")
         self.model.stop_training = True
 ```
+
+```
+callbacks = myCallback()
+...
+model.fit(training_images, training_labels, epochs=5, callbacks=[callbacks])
+```
